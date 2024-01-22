@@ -1,0 +1,20 @@
+{
+    "mqttSettings": {
+        "mqttBrokerURL": "mqtt://localhost:1883",
+        "user": "testuser",
+        "password": "testpassword",
+        "clientId": "testclient",
+        "topics": {
+            "topic1": 1,
+            "topic2": 2
+        }
+    },
+    "mongodbSettings": {
+        "url": "mongodb://localhost:27017",
+        "authSource": "admin",
+        "username": "testuser",
+        "password": "testpassword",
+        "dbName": "testdb",
+        "collection": "testcollection"
+    }
+}

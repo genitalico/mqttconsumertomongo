@@ -1,0 +1,11 @@
+[Unit]
+Description=Consumer mqtt to save mongodb
+After=network.target
+
+[Service]
+ExecStart=/path/to/mqttconsumertomongo.exe /path/to/settings.json
+Type=simple
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
