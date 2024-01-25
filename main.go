@@ -57,7 +57,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Subscribed to the topics")
+	for key, value := range mqttSettings.Topics {
+		fmt.Println("Subscribed to the topic:", key, "with QoS:", value)
+	}
 
 	select {}
 }
